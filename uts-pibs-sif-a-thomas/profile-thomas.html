@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Profil Mahasiswa Tegar Surya Christy</title>
+      <link rel="stylesheet" href="style.css">
+
+      <script>
+
+        function showContent(contentId) {
+
+            // Menyembunyikan semua section (Hanya ditampilkan ketika di klik menu navbarnya)
+            document.getElementById("biodata").style.display = "none";
+            document.getElementById("pendidikan").style.display = "none";
+            document.getElementById("pengalaman").style.display = "none";
+            document.getElementById("keahlian").style.display = "none";
+            document.getElementById("publikasi").style.display = "none";
+            
+            // Menampilkan isi section dari menu navbar yang diklik
+            document.getElementById(contentId).style.display = "block";
+        }
+
+      </script>
+      
+  </head>
+
+  <body onload="showContent('biodata')"> <!-- Default pertama kali untuk menampilkan Biodata -->
+
+          <!-- Header -->
+          <header class="header-content">
+              <img class="foto-mahasiswa" src="images/thomas.jpg" alt="Foto Mahasiswa" height="80px">
+              <h1>Profil Mahasiswa Tegar Surya Christy</h1>
+          </header>
+          <!-- Header -->
+
+          <!-- Navbar -->
+          <nav>
+            <ul class="menu-navbar">
+              <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+              <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+              <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+              <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+              <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+            </ul>
+          </nav>
+          <!-- Navbar -->
+
+          <!-- Section -->
+
+            <!-- Biodata -->
+            <section id="biodata">
+
+              <h2>Biodata</h2>
+
+              <br />
+
+              <p><b>NIM: </b>2023081018</p>
+
+              <br />
+
+              <p><b>Nama: </b>Tegar Surya Christy (Thomas Becket Tegar Surya Christy)</p>
+
+              <br />
+
+              <p><b>Agama: </b>Monthyisme</p>
+
+              <br />
+
+              <p><b>Tanggal Lahir: </b>30 Desember 2004</p>
+
+              <br />
+
+              <p><b>Tempat Lahir: </b>Jakarta</p>
+
+            </section>
+
+            <!-- Pendidikan -->
+            <section id="pendidikan" style="display: none;">
+
+              <h2>Pendidikan</h2>
+
+              <br />
+
+              <p><b>SD: </b>SD Strada Bhakti Utama (2011 - 2017)</p>
+
+              <br />
+
+              <p><b>SMP: </b>SMP Kanisisus Wonosari (2017 - 2018) & SMP Negeri 177 Jakarta (2018 - 2020)</p>
+
+              <br />
+
+              <p><b>SMA/SMK: </b>SMK Bina Informatika Bintaro (2020 - 2023)</p>
+
+              <br />
+
+              <p><b>S1: </b>Universitas Pembangunan Jaya (2023)</p>
+
+            </section>
+
+            <!-- Pengalaman -->
+            <section id="pengalaman" style="display: none;">
+
+              <h2>Pengalaman</h2>
+
+              <br />
+
+              <li>Magang di PT. Inamart Sukses Jaya (September 2022 - November 2022)</li>
+
+            </section>
+
+            <!-- Keahlian -->
+            <section id="keahlian" style="display: none;">
+
+              <h2>Keahlian</h2>
+
+              <br />
+
+              <li>Web Development (HTML, CSS, JavaScript, PHP) - Terampil</li>
+              <li>Database Management (MySQL) - Terampil</li>
+              <li>UI/UX Design - Terampil</li>
+              <li>Bot Development (Discord Bot) - Pemula</li>
+              <li>Android App Development (Kodular) - Pemula</li>
+
+            </section>
+
+            <!-- Publikasi -->
+            <section id="publikasi" style="display: none;">
+
+              <h2>Publikasi</h2>
+
+              <br />
+
+              <p>Judul Publikasi 1 - Tahun 2023</p>
+              <p>Judul Publikasi 2 - Tahun 2024</p>
+
+            </section>
+
+          <!-- Section -->
+          
+          <!-- Aside -->
+          <aside>
+              <h3>Hobi:</h3>
+
+              <br />
+
+              <ul>
+                <li>Main Game</li>
+                <li>Menulis Cerita/Naratif</li>
+                <li>Baca Buku & Artikel</li>
+                <li>Ngoding :)</li>
+              </ul>
+
+          </aside>
+          <!-- Aside -->
+
+          <!-- Footer -->
+          <footer>
+
+            <section class="social-media">
+                <p><b>Temukan kami di:</b></p>
+                <p>Twitter/X: @ceritanya_twitternya_thomas</p>
+                <p>Facebook: @Ceritanya Facebooknya Thomas</p>
+                <p>Instagram: @ceritanya_instagramnya_thomas</p>
+            </section>
+        
+            <section class="copyright">
+                <p>Copyright UTS Tegar Surya Christy 2024</p>
+            </section>
+        
+            <section class="info-web">
+                <p><b>Web Profil Mahasiswa</b></p>
+                <p>Web Untuk Profil Mahasiswa</p>
+            </section>
+            
+          </footer>
+          <!-- Footer -->
+          
+  </body>
+
+</html>
